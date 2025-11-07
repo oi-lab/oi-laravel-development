@@ -1,6 +1,6 @@
 <?php
 
-namespace OiLab\LaravelDevelopment\Commands\Dev;
+namespace OiLab\OiLaravelDevelopment\Commands\Dev;
 
 use App\Models\User;
 use Illuminate\Console\Command;
@@ -15,7 +15,7 @@ class ForcePassword extends Command
     {
         $user = User::where('email', $this->argument('email'))->firstOrFail();
 
-        $password = $this->option('password') ?: config('oi-development.default_password');
+        $password = $this->option('password') ?: config('oi-laravel-development.default_password');
 
         $user->update([
             'password' => bcrypt($password),

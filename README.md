@@ -80,7 +80,7 @@ Publish the configuration file:
 php artisan vendor:publish --tag=laravel-development-config
 ```
 
-This creates `config/oi-development.php` with the following options:
+This creates `config/oi-laravel-development.php` with the following options:
 
 ```php
 return [
@@ -186,7 +186,7 @@ php artisan init:all --force
 Add custom log files to clear:
 
 ```php
-// config/oi-development.php
+// config/oi-laravel-development.php
 'log_files' => [
     'laravel.log',
     'custom-application.log',
@@ -199,7 +199,7 @@ Add custom log files to clear:
 Protect specific directories from being cleared:
 
 ```php
-// config/oi-development.php
+// config/oi-laravel-development.php
 'storage_exceptions' => [
     'dev',
     'seeders',
@@ -213,7 +213,7 @@ Protect specific directories from being cleared:
 Define which seeders appear in the init:all command:
 
 ```php
-// config/oi-development.php
+// config/oi-laravel-development.php
 'seeders' => [
     'Database\\Seeders\\UserSeeder' => 'Users',
     'Database\\Seeders\\RoleSeeder' => 'Roles & Permissions',

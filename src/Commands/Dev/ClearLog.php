@@ -1,6 +1,6 @@
 <?php
 
-namespace OiLab\LaravelDevelopment\Commands\Dev;
+namespace OiLab\OiLaravelDevelopment\Commands\Dev;
 
 use Illuminate\Console\Command;
 
@@ -14,7 +14,7 @@ class ClearLog extends Command
     {
         $this->info('Clearing log files...');
 
-        $logFiles = collect(config('oi-development.log_files'))
+        $logFiles = collect(config('oi-laravel-development.log_files'))
             ->map(fn ($file) => storage_path("logs/{$file}"));
 
         foreach ($logFiles as $logFile) {

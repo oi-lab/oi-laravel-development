@@ -1,6 +1,6 @@
 <?php
 
-namespace OiLab\LaravelDevelopment;
+namespace OiLab\OiLaravelDevelopment;
 
 use Illuminate\Support\ServiceProvider;
 use OiLab\LaravelDevelopment\Commands\Dev\ClearLog;
@@ -14,8 +14,8 @@ class OiLaravelDevelopmentServiceProvider extends ServiceProvider
     public function register(): void
     {
         $this->mergeConfigFrom(
-            __DIR__ . '/../config/oi-development.php',
-            'oi-development'
+            __DIR__ . '/../config/oi-laravel-development.php',
+            'oi-laravel-development'
         );
     }
 
@@ -23,8 +23,8 @@ class OiLaravelDevelopmentServiceProvider extends ServiceProvider
     {
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__ . '/../config/oi-development.php' => config_path('oi-development.php'),
-            ], 'laravel-development-config');
+                __DIR__ . '/../config/oi-laravel-development.php' => config_path('oi-laravel-development.php'),
+            ], 'oi-laravel-development-config');
 
             $this->commands([
                 ClearLog::class,

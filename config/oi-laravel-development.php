@@ -58,10 +58,6 @@ return [
 
     'seeders' => [
         'Database\\Seeders\\UserSeeder' => 'UserSeeder',
-        'Database\\Seeders\\OrganizationSeeder' => 'OrganizationSeeder',
-        'Database\\Seeders\\ProjectSeeder' => 'ProjectSeeder',
-        'Database\\Seeders\\GroupSeeder' => 'GroupSeeder',
-        'Database\\Seeders\\PageSeeder' => 'PageSeeder',
     ],
 
 ];

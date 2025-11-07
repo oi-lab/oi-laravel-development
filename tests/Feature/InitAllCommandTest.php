@@ -1,7 +1,7 @@
 <?php
 
 it('runs all seeders with force flag', function () {
-    config()->set('oi-development.seeders', [
+    config()->set('oi-laravel-development.seeders', [
         'Database\\Seeders\\TestSeeder' => 'Test Seeder',
     ]);
 
@@ -11,7 +11,7 @@ it('runs all seeders with force flag', function () {
 });
 
 it('shows message when no seeders are configured', function () {
-    config()->set('oi-development.seeders', []);
+    config()->set('oi-laravel-development.seeders', []);
 
     $this->artisan('init:all', ['--force' => true])
         ->expectsOutput('No seeders selected.')
@@ -24,7 +24,7 @@ it('respects configured seeders list', function () {
         'Database\\Seeders\\RoleSeeder' => 'Roles',
     ];
 
-    config()->set('oi-development.seeders', $seeders);
+    config()->set('oi-laravel-development.seeders', $seeders);
 
     $command = $this->artisan('init:all', ['--force' => true]);
 

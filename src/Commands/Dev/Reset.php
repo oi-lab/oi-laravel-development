@@ -1,6 +1,6 @@
 <?php
 
-namespace OiLab\LaravelDevelopment\Commands\Dev;
+namespace OiLab\OiLaravelDevelopment\Commands\Dev;
 
 use Illuminate\Console\Command;
 

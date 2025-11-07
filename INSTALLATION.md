@@ -29,11 +29,11 @@ composer require oi-lab/oi-laravel-development --dev
 php artisan vendor:publish --tag=laravel-development-config
 ```
 
-This will create `config/oi-development.php`.
+This will create `config/oi-laravel-development.php`.
 
 ### 4. Configure Your Seeders
 
-Edit `config/oi-development.php`:
+Edit `config/oi-laravel-development.php`:
 
 ```php
 'seeders' => [
@@ -102,7 +102,7 @@ Make sure you published the config:
 php artisan vendor:publish --tag=laravel-development-config
 ```
 
-Check that `config/oi-development.php` exists.
+Check that `config/oi-laravel-development.php` exists.
 
 ### User model not found in ForcePassword command
 
@@ -115,5 +115,5 @@ The `dev:force-password` command uses `App\Models\User`. Make sure your User mod
 composer remove oi-lab/oi-laravel-development
 
 # Remove the config file (optional)
-rm config/oi-development.php
+rm config/oi-laravel-development.php
 ```

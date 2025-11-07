@@ -1,6 +1,6 @@
 <?php
 
-namespace OiLab\LaravelDevelopment\Commands\Dev;
+namespace OiLab\OiLaravelDevelopment\Commands\Dev;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Storage;
@@ -18,7 +18,7 @@ class ClearStorage extends Command
     public function handle(): void
     {
         $forceOption = $this->option('force');
-        $exceptions = config('oi-development.storage_exceptions', []);
+        $exceptions = config('oi-laravel-development.storage_exceptions', []);
 
         $disk = config('app.env') === 'production' ? 's3' : 'local';
         $this->directories = Storage::disk($disk)->directories('.');

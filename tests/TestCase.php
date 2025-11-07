@@ -17,9 +17,9 @@ abstract class TestCase extends Orchestra
     protected function getEnvironmentSetUp($app): void
     {
         config()->set('database.default', 'testing');
-        config()->set('oi-development.default_password', 'test-password');
-        config()->set('oi-development.storage_exceptions', ['dev', 'seeders', 'backups']);
-        config()->set('oi-development.log_files', ['laravel.log']);
-        config()->set('oi-development.seeders', []);
+        config()->set('oi-laravel-development.default_password', 'test-password');
+        config()->set('oi-laravel-development.storage_exceptions', ['dev', 'seeders', 'backups']);
+        config()->set('oi-laravel-development.log_files', ['laravel.log']);
+        config()->set('oi-laravel-development.seeders', []);
     }
 }

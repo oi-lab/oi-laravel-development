@@ -1,6 +1,6 @@
 <?php
 
-namespace OiLab\LaravelDevelopment\Commands\Init;
+namespace OiLab\OiLaravelDevelopment\Commands\Init;
 
 use Illuminate\Console\Command;
 
@@ -44,6 +44,6 @@ class InitAll extends Command
      */
     protected function getAvailableSeeders(): array
     {
-        return config('oi-development.seeders', []);
+        return config('oi-laravel-development.seeders', []);
     }
 }
