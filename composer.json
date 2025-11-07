@@ -40,7 +40,7 @@
     "extra": {
         "laravel": {
             "providers": [
-              "OiLaravelDevelopmentServiceProvider"
+                "OiLab\\OiLaravelDevelopment\\OiLaravelDevelopmentServiceProvider"
             ]
         }
     },

@@ -77,7 +77,7 @@ composer require oi-lab/oi-laravel-development --dev
 Publish the configuration file:
 
 ```bash
-php artisan vendor:publish --tag=laravel-development-config
+php artisan vendor:publish --tag=oi-laravel-development-config
 ```
 
 This creates `config/oi-laravel-development.php` with the following options:

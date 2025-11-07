@@ -26,7 +26,13 @@ composer require oi-lab/oi-laravel-development --dev
 ### 3. Publish Configuration
 
 ```bash
-php artisan vendor:publish --tag=laravel-development-config
+php artisan vendor:publish --tag=oi-laravel-development-config
+```
+
+Or publish all config files:
+
+```bash
+php artisan vendor:publish --tag=config
 ```
 
 This will create `config/oi-laravel-development.php`.
@@ -99,7 +105,7 @@ composer dump-autoload
 
 Make sure you published the config:
 ```bash
-php artisan vendor:publish --tag=laravel-development-config
+php artisan vendor:publish --tag=oi-laravel-development-config
 ```
 
 Check that `config/oi-laravel-development.php` exists.

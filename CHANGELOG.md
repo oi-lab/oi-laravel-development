@@ -4,6 +4,12 @@ All notable changes to `oi-laravel-development` will be documented in this file.
 
 ## [Unreleased]
 
+### Fixed
+- Fixed namespace issues in ServiceProvider for proper Laravel 12 compatibility
+- Fixed composer.json provider registration path
+- Updated publish tags to use array syntax compatible with Laravel 12
+- Updated documentation to reflect correct publish tag usage
+
 ### Added
 - Initial release
 - `dev:clear-log` command to clear Laravel log files
