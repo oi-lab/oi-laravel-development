@@ -1,9 +1,9 @@
 <?php
 
-namespace OiLab\LaravelDevelopment\Tests;
+namespace OiLab\OiLaravelDevelopment\Tests;
 
 use Orchestra\Testbench\TestCase as Orchestra;
-use OiLab\LaravelDevelopment\OiLaravelDevelopmentServiceProvider;
+use OiLab\OiLaravelDevelopment\OiLaravelDevelopmentServiceProvider;
 
 abstract class TestCase extends Orchestra
 {
