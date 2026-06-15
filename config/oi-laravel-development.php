@@ -60,4 +60,18 @@ return [
         'Database\\Seeders\\UserSeeder' => 'UserSeeder',
     ],
 
+    /*
+    |--------------------------------------------------------------------------
+    | Additional Skill Package Paths
+    |--------------------------------------------------------------------------
+    |
+    | The oi:skills command discovers AI assistant skills by scanning every
+    | installed oi-lab/* Composer package for an "extra.oi-lab.skills" block.
+    | Add absolute paths to extra package roots (e.g. local monorepo packages
+    | not resolved through Composer) to include them in the discovery.
+    |
+    */
+
+    'skill_paths' => [],
+
 ];
