@@ -8,6 +8,7 @@ use OiLab\OiLaravelDevelopment\Commands\Dev\ClearStorage;
 use OiLab\OiLaravelDevelopment\Commands\Dev\ForcePassword;
 use OiLab\OiLaravelDevelopment\Commands\Dev\Reset;
 use OiLab\OiLaravelDevelopment\Commands\Init\InitAll;
+use OiLab\OiLaravelDevelopment\Commands\Release\PackageRelease;
 use OiLab\OiLaravelDevelopment\Commands\Skills\InstallSkills;
 
 class OiLaravelDevelopmentServiceProvider extends ServiceProvider
@@ -34,6 +35,7 @@ class OiLaravelDevelopmentServiceProvider extends ServiceProvider
                 Reset::class,
                 InitAll::class,
                 InstallSkills::class,
+                PackageRelease::class,
             ]);
         }
     }

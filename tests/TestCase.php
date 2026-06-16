@@ -2,14 +2,16 @@
 
 namespace OiLab\OiLaravelDevelopment\Tests;
 
-use Orchestra\Testbench\TestCase as Orchestra;
+use Laravel\Ai\AiServiceProvider;
 use OiLab\OiLaravelDevelopment\OiLaravelDevelopmentServiceProvider;
+use Orchestra\Testbench\TestCase as Orchestra;
 
 abstract class TestCase extends Orchestra
 {
     protected function getPackageProviders($app): array
     {
         return [
+            AiServiceProvider::class,
             OiLaravelDevelopmentServiceProvider::class,
         ];
     }
