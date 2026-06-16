@@ -11,7 +11,6 @@ use Throwable;
 use function Laravel\Prompts\confirm;
 use function Laravel\Prompts\select;
 use function Laravel\Prompts\spin;
-use function Laravel\Prompts\text;
 use function Laravel\Prompts\textarea;
 
 class PackageRelease extends Command
@@ -322,6 +321,7 @@ class PackageRelease extends Command
             label: 'Commit message',
             default: $suggestion,
             required: true,
+            rows: 14,
             hint: 'Review and edit the suggested message before confirming.',
         ));
     }
